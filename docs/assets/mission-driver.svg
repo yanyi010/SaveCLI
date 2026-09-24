@@ -1,0 +1,110 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4B5F7E"/>
+    </marker>
+    <marker id="arrGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#34D399"/>
+    </marker>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#FBBF24"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="640" rx="20" fill="#0B1120"/>
+  <rect x="0.5" y="0.5" width="1199" height="639" rx="19.5" fill="none" stroke="#1B2A44"/>
+
+  <!-- ============ cards ============ -->
+  <!-- mission brief -->
+  <g>
+    <rect x="40" y="140" width="230" height="170" rx="14" fill="#0F1B2E"/>
+    <rect x="40.5" y="140.5" width="229" height="169" rx="13.5" fill="none" stroke="#223350"/>
+    <!-- doc icon -->
+    <g stroke="#94A3B8" stroke-width="2" fill="none">
+      <path d="M62 168 h18 l10 10 v26 a4 4 0 0 1 -4 4 h-24 a4 4 0 0 1 -4 -4 v-32 a4 4 0 0 1 4 -4 z"/>
+      <path d="M80 168 v10 h10"/>
+      <path d="M66 192 h16 M66 200 h12" stroke-linecap="round"/>
+    </g>
+    <text x="104" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="20" font-weight="700" fill="#F1F5F9">Brief</text>
+    <text x="104" y="208" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12" fill="#54657E">mission start</text>
+    <text x="64" y="254" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">goal + acceptance criteria,</text>
+    <text x="64" y="276" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">autonomy level, task cap</text>
+  </g>
+
+  <!-- planner -->
+  <g>
+    <rect x="330" y="140" width="230" height="170" rx="14" fill="#0F1B2E"/>
+    <rect x="330.5" y="140.5" width="229" height="169" rx="13.5" fill="none" stroke="#223350"/>
+    <g stroke="#22D3EE" stroke-width="2" fill="none">
+      <circle cx="364" cy="176" r="5"/>
+      <circle cx="352" cy="200" r="5"/>
+      <circle cx="376" cy="200" r="5"/>
+      <path d="M364 181 v6 M360 195 l-4 -8 M368 195 l4 -8"/>
+    </g>
+    <text x="394" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="20" font-weight="700" fill="#F1F5F9">Planner</text>
+    <rect x="394" y="196" width="92" height="22" rx="11" fill="#22D3EE" fill-opacity="0.12"/>
+    <text x="440" y="211" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="11.5" fill="#22D3EE">small model</text>
+    <text x="352" y="254" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">picks the next task from</text>
+    <text x="352" y="276" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">the mission brief</text>
+  </g>
+
+  <!-- engineer -->
+  <g>
+    <rect x="620" y="140" width="230" height="170" rx="14" fill="#0F1B2E"/>
+    <rect x="620.5" y="140.5" width="229" height="169" rx="13.5" fill="none" stroke="#223350"/>
+    <g stroke="#34D399" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M646 176 l10 10 -10 10"/>
+      <path d="M662 196 h14" />
+    </g>
+    <text x="690" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="20" font-weight="700" fill="#F1F5F9">Engineer</text>
+    <rect x="690" y="196" width="88" height="22" rx="11" fill="#34D399" fill-opacity="0.12"/>
+    <text x="734" y="211" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="11.5" fill="#34D399">main model</text>
+    <text x="642" y="254" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">fresh context per task —</text>
+    <text x="642" y="276" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">full read/write/bash tools</text>
+  </g>
+
+  <!-- reviewer -->
+  <g>
+    <rect x="910" y="140" width="230" height="170" rx="14" fill="#0F1B2E"/>
+    <rect x="910.5" y="140.5" width="229" height="169" rx="13.5" fill="none" stroke="#223350"/>
+    <g stroke="#A78BFA" stroke-width="2" fill="none" stroke-linejoin="round">
+      <path d="M952 168 l16 6 v12 c0 11 -7 18 -16 22 c-9 -4 -16 -11 -16 -22 v-12 z"/>
+      <path d="M945 188 l6 6 10 -11" stroke-linecap="round"/>
+    </g>
+    <text x="980" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="20" font-weight="700" fill="#F1F5F9">Reviewer</text>
+    <rect x="980" y="196" width="82" height="22" rx="11" fill="#A78BFA" fill-opacity="0.12"/>
+    <text x="1021" y="211" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="11.5" fill="#A78BFA">read-only</text>
+    <text x="932" y="254" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">verifies real evidence:</text>
+    <text x="932" y="276" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="14.5" fill="#94A3B8">pass · fail · blocked</text>
+  </g>
+
+  <!-- forward arrows -->
+  <g stroke="#4B5F7E" stroke-width="2.5" fill="none">
+    <line x1="272" y1="225" x2="324" y2="225" marker-end="url(#arr)"/>
+    <line x1="562" y1="225" x2="614" y2="225" marker-end="url(#arr)"/>
+    <line x1="852" y1="225" x2="904" y2="225" marker-end="url(#arr)"/>
+  </g>
+  <g font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#54657E">
+    <text x="298" y="206" text-anchor="middle">start</text>
+    <text x="588" y="206" text-anchor="middle">next task</text>
+    <text x="878" y="206" text-anchor="middle">evidence</text>
+  </g>
+
+  <!-- pass loop -->
+  <path d="M958 310 V432 H444 V318" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrGreen)" stroke-dasharray="0"/>
+  <text x="701" y="424" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="13" fill="#34D399">pass → planner picks the next task · until criteria met</text>
+
+  <!-- fail loop -->
+  <path d="M1092 310 V492 H736 V318" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrAmber)"/>
+  <text x="914" y="484" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="13" fill="#FBBF24">fail → engineer retries with review feedback · max 3 attempts</text>
+
+  <!-- bottom strip -->
+  <g font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="14.5">
+    <rect x="96" y="552" width="340" height="48" rx="24" fill="#0F1B2E" stroke="#223350"/>
+    <text x="266" y="582" text-anchor="middle" fill="#94A3B8">budgets · tokens · tasks · hours</text>
+    <rect x="456" y="552" width="380" height="48" rx="24" fill="#0F1B2E" stroke="#223350"/>
+    <text x="646" y="582" text-anchor="middle" fill="#94A3B8">state: ~/.savecli/missions/ · per step</text>
+    <rect x="856" y="552" width="248" height="48" rx="24" fill="#0F1B2E" stroke="#223350"/>
+    <text x="980" y="582" text-anchor="middle" fill="#94A3B8">Ctrl-C pause · resume</text>
+  </g>
+</svg>

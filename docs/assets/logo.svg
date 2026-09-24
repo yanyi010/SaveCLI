@@ -1,0 +1,31 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="0.55" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="8" y1="8" x2="248" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101A30"/>
+      <stop offset="1" stop-color="#0B1224"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 122) scale(118)">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.28"/>
+      <stop offset="0.7" stop-color="#22D3EE" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- plate -->
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#plate)"/>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#glow)"/>
+  <rect x="9" y="9" width="238" height="238" rx="57" fill="none" stroke="#FFFFFF" stroke-opacity="0.075" stroke-width="2"/>
+
+  <!-- terminal prompt chevron -->
+  <path d="M72 90 L116 128 L72 166" fill="none" stroke="url(#brand)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- compressed token stack -->
+  <rect x="140" y="98"  width="46" height="13" rx="6.5" fill="url(#brand)"/>
+  <rect x="140" y="122" width="35" height="13" rx="6.5" fill="url(#brand)" opacity="0.66"/>
+  <rect x="140" y="146" width="24" height="13" rx="6.5" fill="url(#brand)" opacity="0.38"/>
+</svg>

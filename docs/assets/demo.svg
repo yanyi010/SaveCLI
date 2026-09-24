@@ -1,0 +1,64 @@
+<svg width="1200" height="824" viewBox="0 0 1200 824" fill="none" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+  <defs>
+    <filter id="winShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="24" stdDeviation="40" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <radialGradient id="topGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 -40) scale(700 300)">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- window -->
+  <g filter="url(#winShadow)">
+    <rect x="8" y="8" width="1184" height="808" rx="16" fill="#0D1626"/>
+  </g>
+  <rect x="8.5" y="8.5" width="1183" height="807" rx="15.5" fill="none" stroke="#223350"/>
+  <rect x="8" y="8" width="1184" height="808" rx="16" fill="url(#topGlow)"/>
+  <path d="M8 24 a16 16 0 0 1 16 -16 h1152 a16 16 0 0 1 16 16 v28 h-1184 z" fill="#111C30"/>
+  <circle cx="40" cy="30" r="5.5" fill="#FF5F57"/>
+  <circle cx="62" cy="30" r="5.5" fill="#FEBC2E"/>
+  <circle cx="84" cy="30" r="5.5" fill="#28C840"/>
+  <text x="600" y="35" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="13" fill="#54657E">savecli — REPL</text>
+
+  <g font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="15.5">
+
+    <!-- launch -->
+    <text x="40" y="90"><tspan fill="#7EE787">$ </tspan><tspan fill="#E6EDF3" font-weight="600">savecli</tspan></text>
+    <text x="40" y="118" fill="#64748B">SaveCLI v0.1.0 · deepseek/deepseek-chat · system prompt 350 tokens</text>
+    <text x="40" y="144" fill="#475569">/help for commands · steering on · response cache on · zero telemetry</text>
+
+    <!-- user request -->
+    <text x="40" y="196"><tspan fill="#22D3EE">❯ </tspan><tspan fill="#E6EDF3">port every lodash call in src/ to native js and keep the tests green</tspan></text>
+
+    <!-- tool trace -->
+    <text x="40" y="248" fill="#FBBF24">⠋ planning…</text>
+    <text x="40" y="288"><tspan fill="#64748B">› read   </tspan><tspan fill="#96B3D9">src/utils/date.js</tspan></text>
+    <text x="40" y="316"><tspan fill="#64748B">› grep   </tspan><tspan fill="#E6EDF3">"from 'lodash'" src/  </tspan><tspan fill="#64748B">→ 41 matches in 9 files</tspan></text>
+    <text x="40" y="344"><tspan fill="#64748B">› edit   </tspan><tspan fill="#96B3D9">src/utils/date.js     </tspan><tspan fill="#34D399">(+12 −9)</tspan></text>
+    <text x="40" y="372"><tspan fill="#64748B">› edit   </tspan><tspan fill="#96B3D9">src/api/client.ts     </tspan><tspan fill="#34D399">(+18 −14)</tspan></text>
+    <text x="40" y="400"><tspan fill="#64748B">› write  </tspan><tspan fill="#96B3D9">src/utils/debounce.ts </tspan><tspan fill="#34D399">(+22 −0)</tspan></text>
+    <text x="40" y="428"><tspan fill="#64748B">› bash   </tspan><tspan fill="#E6EDF3">npm test  </tspan><tspan fill="#64748B">→ </tspan><tspan fill="#34D399">133 passing · 4.1s</tspan></text>
+    <path transform="translate(38 443) scale(0.66)" d="M13 2 L3 14 h7 l-1 8 L21 10 h-7 l1 -8 z" fill="#FBBF24"/>
+    <text x="60" y="456" fill="#34D399">cached · identical follow-ups replay from disk at 0 tokens</text>
+
+    <!-- agent summary -->
+    <text x="40" y="508" fill="#E6EDF3">All 9 files migrated to native JS. Tests 133/133 green.</text>
+    <text x="40" y="536"><tspan fill="#64748B">tokens  </tspan><tspan fill="#94A3B8">4,812 in · 391 out   </tspan><tspan fill="#64748B">est.  </tspan><tspan fill="#94A3B8">$0.006</tspan></text>
+
+    <!-- /usage -->
+    <text x="40" y="588"><tspan fill="#22D3EE">❯ </tspan><tspan fill="#E6EDF3">/usage</tspan></text>
+
+    <g>
+      <rect x="40" y="608" width="640" height="146" rx="10" fill="#0F1B2E"/>
+      <rect x="40.5" y="608.5" width="639" height="145" rx="9.5" fill="none" stroke="#1E2C44"/>
+      <text x="64" y="644"><tspan fill="#475569">session   </tspan><tspan fill="#C7D3E3">4,812 in · 391 out · $0.006</tspan></text>
+      <text x="64" y="676"><tspan fill="#475569">today     </tspan><tspan fill="#C7D3E3">12,404 in · 1,208 out · $0.02</tspan></text>
+      <text x="64" y="708"><tspan fill="#475569">7 days    </tspan><tspan fill="#C7D3E3">84,910 in · 9,568 out · $0.16</tspan></text>
+      <path transform="translate(62 720) scale(0.6)" d="M13 2 L3 14 h7 l-1 8 L21 10 h-7 l1 -8 z" fill="#FBBF24"/>
+      <text x="84" y="740" fill="#34D399">cache hits 6 · saved ≈ 61,300 tokens</text>
+    </g>
+
+    <text x="40" y="800"><tspan fill="#22D3EE">❯ </tspan><tspan fill="#334155">▌</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+  <rect width="1200" height="640" rx="20" fill="#0B1120"/>
+  <rect x="0.5" y="0.5" width="1199" height="639" rx="19.5" fill="none" stroke="#1B2A44"/>
+
+  <defs>
+    <linearGradient id="brandT" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- heading -->
+  <text x="64" y="72" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="26" font-weight="700" fill="#F1F5F9">Every turn, fewer tokens</text>
+  <text x="64" y="104" font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif" font-size="15.5" fill="#64748B">Six economy features, on by default, visible with /usage</text>
+  <rect x="64" y="124" width="1072" height="2" fill="url(#brandT)" opacity="0.35"/>
+
+  <!-- card template geometry: 3 cols × 2 rows, cards 340×208 at x=64/430/796, y=156/388 -->
+  <g font-family="'Segoe UI',-apple-system,'Helvetica Neue','Noto Sans',Arial,sans-serif">
+
+    <!-- 1 response cache -->
+    <g>
+      <rect x="64" y="156" width="340" height="208" rx="14" fill="#0F1B2E"/>
+      <rect x="64.5" y="156.5" width="339" height="207" rx="13.5" fill="none" stroke="#223350"/>
+      <rect x="88" y="180" width="44" height="44" rx="12" fill="#FBBF24" fill-opacity="0.10"/>
+      <path transform="translate(99 191) scale(0.9)" d="M13 2 L3 14 h7 l-1 8 L21 10 h-7 l1 -8 z" fill="#FBBF24"/>
+      <text x="148" y="210" font-size="19" font-weight="700" fill="#F1F5F9">Response cache</text>
+      <text x="88" y="258" font-size="13.5" fill="#94A3B8">Identical conversations replay from</text>
+      <text x="88" y="278" font-size="13.5" fill="#94A3B8">disk — private LRU, 200 entries.</text>
+      <text x="88" y="298" font-size="13.5" fill="#94A3B8">Repeat runs cost nothing.</text>
+      <text x="88" y="338" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#34D399">~/.savecli/cache/responses · 0 tokens</text>
+    </g>
+
+    <!-- 2 auto-compaction -->
+    <g>
+      <rect x="430" y="156" width="340" height="208" rx="14" fill="#0F1B2E"/>
+      <rect x="430.5" y="156.5" width="339" height="207" rx="13.5" fill="none" stroke="#223350"/>
+      <rect x="454" y="180" width="44" height="44" rx="12" fill="#34D399" fill-opacity="0.10"/>
+      <g stroke="#34D399" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M466 196 h18 M466 208 h18"/>
+        <path d="M490 192 l8 4 -8 4 M490 208 l8 4 -8 4" transform="translate(-6 0)"/>
+        <path d="M486 192 l-8 4 8 4 M486 208 l-8 4 8 4" transform="translate(6 0)"/>
+      </g>
+      <text x="514" y="210" font-size="19" font-weight="700" fill="#F1F5F9">Auto-compaction</text>
+      <text x="454" y="258" font-size="13.5" fill="#94A3B8">Past 24k, older turns are summarized</text>
+      <text x="454" y="278" font-size="13.5" fill="#94A3B8">by a cheap small model; recent turns</text>
+      <text x="454" y="298" font-size="13.5" fill="#94A3B8">stay verbatim.</text>
+      <text x="454" y="338" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#34D399">auto · manual: /compact &lt;focus&gt;</text>
+    </g>
+
+    <!-- 3 truncation -->
+    <g>
+      <rect x="796" y="156" width="340" height="208" rx="14" fill="#0F1B2E"/>
+      <rect x="796.5" y="156.5" width="339" height="207" rx="13.5" fill="none" stroke="#223350"/>
+      <rect x="820" y="180" width="44" height="44" rx="12" fill="#22D3EE" fill-opacity="0.10"/>
+      <g stroke="#22D3EE" stroke-width="2.2" fill="none" stroke-linecap="round">
+        <path d="M832 190 h20 M832 198 h20"/>
+        <path d="M836 206 h12" stroke-dasharray="2.5 3.5"/>
+        <path d="M832 214 h20"/>
+      </g>
+      <text x="880" y="210" font-size="19" font-weight="700" fill="#F1F5F9">Output truncation</text>
+      <text x="820" y="258" font-size="13.5" fill="#94A3B8">Huge tool outputs keep head + tail</text>
+      <text x="820" y="278" font-size="13.5" fill="#94A3B8">inside an 8 KB cap — no log walls</text>
+      <text x="820" y="298" font-size="13.5" fill="#94A3B8">burning your context.</text>
+      <text x="820" y="338" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#34D399">head + tail · ≤ 8 KB</text>
+    </g>
+
+    <!-- 4 sanitization -->
+    <g>
+      <rect x="64" y="388" width="340" height="208" rx="14" fill="#0F1B2E"/>
+      <rect x="64.5" y="388.5" width="339" height="207" rx="13.5" fill="none" stroke="#223350"/>
+      <rect x="88" y="412" width="44" height="44" rx="12" fill="#A78BFA" fill-opacity="0.10"/>
+      <g stroke="#A78BFA" stroke-width="2.2" fill="none" stroke-linejoin="round">
+        <path d="M110 418 l13 5 v10 c0 9 -6 15 -13 18 c-7 -3 -13 -9 -13 -18 v-10 z"/>
+        <path d="M104 433 l5 5 8 -9" stroke-linecap="round"/>
+      </g>
+      <text x="148" y="442" font-size="19" font-weight="700" fill="#F1F5F9">Context sanitization</text>
+      <text x="88" y="490" font-size="13.5" fill="#94A3B8">Secret-shaped strings are scrubbed</text>
+      <text x="88" y="510" font-size="13.5" fill="#94A3B8">from tool output before they ever</text>
+      <text x="88" y="530" font-size="13.5" fill="#94A3B8">enter the conversation.</text>
+      <text x="88" y="570" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#34D399">keys · tokens · PEM blocks</text>
+    </g>
+
+    <!-- 5 prompt caching -->
+    <g>
+      <rect x="430" y="388" width="340" height="208" rx="14" fill="#0F1B2E"/>
+      <rect x="430.5" y="388.5" width="339" height="207" rx="13.5" fill="none" stroke="#223350"/>
+      <rect x="454" y="412" width="44" height="44" rx="12" fill="#2DD4BF" fill-opacity="0.10"/>
+      <g stroke="#2DD4BF" stroke-width="2.2" fill="none" stroke-linejoin="round">
+        <path d="M466 418 h20 v30 l-10 -8 -10 8 z"/>
+      </g>
+      <text x="514" y="442" font-size="19" font-weight="700" fill="#F1F5F9">Prompt caching</text>
+      <text x="454" y="490" font-size="13.5" fill="#94A3B8">Cache breakpoints on system + last</text>
+      <text x="454" y="510" font-size="13.5" fill="#94A3B8">message (Anthropic), and provider</text>
+      <text x="454" y="530" font-size="13.5" fill="#94A3B8">caches wherever available.</text>
+      <text x="454" y="570" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#34D399">anthropic · openai-compatible</text>
+    </g>
+
+    <!-- 6 usage ledger -->
+    <g>
+      <rect x="796" y="388" width="340" height="208" rx="14" fill="#0F1B2E"/>
+      <rect x="796.5" y="388.5" width="339" height="207" rx="13.5" fill="none" stroke="#223350"/>
+      <rect x="820" y="412" width="44" height="44" rx="12" fill="#38BDF8" fill-opacity="0.10"/>
+      <g stroke="#38BDF8" stroke-width="2.2" fill="none" stroke-linecap="round">
+        <rect x="832" y="418" width="20" height="28" rx="3"/>
+        <path d="M837 426 h10 M837 432 h10 M837 438 h6"/>
+      </g>
+      <text x="880" y="442" font-size="19" font-weight="700" fill="#F1F5F9">Usage ledger</text>
+      <text x="820" y="490" font-size="13.5" fill="#94A3B8">Every request is appended with a</text>
+      <text x="820" y="510" font-size="13.5" fill="#94A3B8">cost estimate — today, 7 days,</text>
+      <text x="820" y="530" font-size="13.5" fill="#94A3B8">all-time.</text>
+      <text x="820" y="570" font-family="ui-monospace,'SF Mono','Cascadia Code','Noto Sans Mono',Consolas,monospace" font-size="12.5" fill="#34D399">savecli usage · usage.jsonl</text>
+    </g>
+  </g>
+</svg>

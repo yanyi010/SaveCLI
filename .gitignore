@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+.savecli/
+coverage/
+.vitest/
+
+# Dev-process artifacts — never commit (kept outside the repo or ignored)
+DESIGN-NOTES.md
+NOTES*.md
+*.notes.md
+*drafts*/
+*.draft.md
